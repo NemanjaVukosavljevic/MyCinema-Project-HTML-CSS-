@@ -31,7 +31,7 @@ a {
         left: 0;
         right: 0;
         width: 100%;
-        height: 7rem;
+        height: 6.3rem;
 
         background-color: rgb(53, 50, 50);
     }
@@ -45,8 +45,19 @@ a {
             display: flex;
             align-items: center;
             font-size: 1.5rem;
-            padding-left: 2rem;
+            padding-left: 2.7rem;
+            padding-top: 1rem;
+
         }
+
+        .company-title-div .outter {
+            height: 100%;
+        }
+        
+
+            .title-logo  {
+                height: 80%;
+            }
 
         .navigation-links-div {
             padding-right: 3rem;
@@ -63,7 +74,7 @@ a {
                 list-style: none;
                 
                 gap: 8rem;
-                padding-top: 1.2rem;
+                padding-top: 0.8rem;
             }
 
             .navigation-links-div a {
@@ -71,7 +82,7 @@ a {
             }
 
             .navigation-links-div a:hover {
-                color: lightsteelblue;
+                color: rgb(66, 207, 196);
             }
 
 /*                   HAMBURGER MENU                 */
@@ -79,7 +90,7 @@ a {
 
         .hamburger-menu {
             position: absolute;
-            top: 1.8rem;
+            top: 2.3rem;
             right: 2.2rem;
             display: flex;
             flex-direction: column;
@@ -107,13 +118,11 @@ a {
             height: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            place-items: center center;  /* CSS SHORTHAND, SUPER STVAR, RADI I JUSTIFY I ALIGN U ISTO VREME (JEDNA VREDNOST JE JUSTIFY, JEDNA ALIGN) */
             gap: 3rem;
-            padding-left: 0.7rem;
             padding-top: 9rem;
-            padding-bottom: 5rem;
 
-
-            background-color: white;
+            background-color: rgb(77, 77, 77);
         }
 
             .card-wrapper {
@@ -127,10 +136,17 @@ a {
                 transition: height 0.5s, width 0.5s ease-out;
             }
 
-            @media (hover:hover){
+            @media (hover:hover){   /* OVAJ QUERY CE SE PRIMENITI SAMO NA UREDJAJIMA KOJI IMAJU HOVER MOGUCNOST */
                 .card-wrapper:hover {
                 height: 36rem;
                 width: 22rem;
+                border: 3px solid rgb(44, 228, 212);
+                box-shadow: -2px -5px 20px 13px rgba(44, 228, 212,0.45),
+                25px 0px 20px -20px rgba(44, 228, 212,0.45),
+                0px 25px 20px -20px rgba(44, 228, 212,0.45),
+                -25px 0px 20px -20px rgba(44, 228, 212,0.45);
+
+
             }
         }
 
@@ -182,6 +198,14 @@ a {
                             margin: 0;
                             padding: 0;
                         }
+
+                            .s-class{
+                                color: red;
+                            }
+
+                            .r-class {
+                                color: rgb(38, 38, 255);
+                            }
     
                     .card-information {
                         display: flex;
@@ -231,9 +255,21 @@ a {
 
         .company-title-div {
             padding-left: 1rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
 
             font-size: 1.2rem;
         }
+
+        .company-title-div .outter {
+            height: 100%;
+        }
+        
+
+            .title-logo  {
+                height: 100%;
+                width: 50%;
+            }
 
         .navigation-links-div {
             display: none;
@@ -271,8 +307,6 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0.3rem;
-        padding-left: 0.3rem;
-        padding-right: 0;
         padding-bottom: 1rem;
         padding-top: 6.8rem;
 
@@ -370,33 +404,4 @@ a {
 
     }
 
-
-
-
-/* @media (max-width: 400px){
-    .first-section-div {
-        padding-top: 7rem;
-        padding: 0;
-        padding-bottom: 0;
-    }
-    
-        .card-wrapper {
-            height: 25rem;
-            width: 12rem;
-            transition: none;
-            padding-left: 0.4rem;
-        }
-
-        .card-wrapper:hover {
-            display: none;
-        }
-
-            .top-card {
-                height: 70%;
-            }
-
-            .bottom-card {
-                height: 30%;
-            }
-} */
 
